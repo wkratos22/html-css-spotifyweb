@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background-color: rgb(34, 32, 32);
+    height: 100vh;
+    width: 100vh;
+}
+
+.color{
+
+    background-color: black;
+    width: 15%;
+    height: 100%;
+
+}
+
+.flex-column{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.spotify-color{
+
+    color: white;
+    
+}
+
+.icon-color{
+
+    color: rgb(0, 0, 0);
+
+}
+
+.icon-size{
+
+    height: 30px;
+    margin-top: 15px;
+    
+}
+
+
+#download{
+
+    height: 20px;
+    margin-left: 30%;
+
+}
+
+#profile{
+
+    height: 35px;
+    width: 35px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+    margin-left: 20%;
+    
+}
+
+/*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*/
+.margin{
+
+    margin-top: 600%;
+}
+
+.display{
+
+    display: flex;
+    
+}
+
+.upgrade{
+
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-left: 45%;
+    margin-top: 8%;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    width: 49%;
+    
+
+}
+
+.header{
+
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    
+}
+
+.wrap{
+    flex-wrap:wrap ;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    margin-top: 120px;
+    display: flex;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul li{
+    padding-left: 10px;
+    color: grey;
+    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 9PX;
+    
+}
+
+.list2{
+    margin-top: 30px;
+    display: flex;
+    list-style-type: none;
+    padding-left: 5px;
+    margin-left: -320px;
+}
+
+
+.h1{
+    color: white;
+    padding-top: 10%;
+    padding-left: 15px;
+    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+.column-img{
+    column-count: 2;
+    margin-left: 15px;
+    margin-top: 5%;
+}
+
+.img{
+    height: 145px;
+}
+
+.titolo{
+    color: white;
+    padding-left: 7%;
+    font-size: 17px;
+}
