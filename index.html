@@ -5,83 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <section class="display">
+    <section class="web-app">
+        <div class="web-app_top">
+            <div class="aside">
 
-        <div class="color flex-column">
-
-            <img class="spotify-color icon-size" src="./img/logo-small.svg" alt="logo">
- 
-            <img class="icon-color icon-size padding" src="/img/home.svg" alt="icona-casa">
-
-            <img class="icon-color icon-size padding" src="/img/search.svg" alt="lente di ingrandimento">
-
-            <img class="icon-color icon-size padding" src="/img/libreria.svg" alt="libreria">
-
-            <div class="margin">
-
-                <img id="download" src="/img/download.svg"alt="download">
-
-                <img id="profile" src="/img/profile.svg" alt="profile">
-
-            </div>
-
-        </div> 
-
-        <section>
-
-            <div class="header column">
-            <p class="upgrade">EFFETTUA L'UPGRADE</p>
-            </div>
-
-            <div>
-                <ul class="list">
-                    <li>IN EVIDENZA</li>
-                    <li>PODCAST</li>
-                    <li>CLASSIFICHE</li>
-                    <li>GENERI E MOOD</li>
+                <div>
+                <img class ="logo-sp"src="./img/logo-small.svg" alt="logo">
+                <img class="logo-spotify" src="./img/logo.svg" alt="logo">
+                </div>
+                
+                <ul>
+                    <li>
+                        <img class="icon" src="./img/home.svg" alt="home">
+                        <div class="inline testo-aside">
+                        <a class="none testo-lista" href="#">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="icon"src="./img/search.svg" alt="search">
+                        <div class="inline testo-aside">
+                        <a class="none testo-lista" href="#">Cerca</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="icon"src="./img/libreria.svg" alt="libreria">
+                        <div class="inline testo-aside">
+                        <a class="none testo-lista inline" href="#">La tua libreria</a>
+                        </div>
+                    </li>
                 </ul>
-            </div>
 
-            <div>
-                <ul class="list2">
-                    <li>NUOVE USCITE</li>
-                    <li>SCOPRI</li>
-                </ul>
-            </div>
+                <div class="aside-div">
 
-            <H1 class="h1">Recently played</H1>
+                    <h1 class="playlist">Playlist</h1>
 
-            <div class="column-img">
-                <img class="img" src="./img/metal_lifting.jpg" alt="metalica">
+                    <div class="crea inline">
+                        <i class="fa-solid fa-square-plus"></i>  
+                    </div>
 
-                <img class="img" src="./img/stranger.jpeg" alt="stranger things">
+                    <div class="inline">
+                        <a class="none testo-lista inline" href="#">Crea playlist</a>
+                    </div>
+                    
+                        
+                    
+                    
 
-            </div>
+                </div>
 
-            <div>
+                <div class="aside-margin center">
 
-                <h1 class="titolo">Heavy Metal</h1>
-
-            </div>
-        </section>
-
-        
-        
+                    <img id="download" src="/img/download.svg"alt="download">
     
+                    <img id="profile" src="/img/profile.svg" alt="profile">
+    
+                </div>
+
+            </div>
+
+            <div class="main">
+                <div class="cta">
+                    <a href="#" class="cta-button">effettua l'upgrade</a>
+                </div>
+
+                <div>
+                    <ul class="list just-center">
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="list2">
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                </div>
+
+                <H1 class="h1">Recently played</H1>
+
+                
+                <div class="column">
+                    <div class="img-pos border">
+                        <img class="img" src="./img/metal_lifting.jpg"  alt="metalica">
+                        <h1 class="titolo">Heavy Metal</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+
+                    <div class="img-pos ">
+                        <img class="img margin-img" src="./img/stranger.jpeg"  alt="metalica">
+                        <h1 class="titolo">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="img-pos">
+                        <img class="img" src="./img/aquietplace.jpeg"  alt="metalica">
+                        <h1 class="titolo">A quiet place</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+
+                    <div class="img-pos">
+                        <img class="img margin-img" src="./img/split.jpeg"  alt="stranger">
+                        <h1 class="titolo">Split</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="img-pos">
+                        <img class="img" src="./img/cure.jpeg"  alt="metalica">
+                        <h1 class="titolo">A cure for welness</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+
+                    <div class="img-pos">
+                        <img class="img margin-img" src="./img/sinister.jpeg"  alt="metalica">
+                        <h1 class="titolo">Split</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+                </div>
+
+                <H1 class="h1">Creato per Jhon Doe</H1>
+                <p class="sottotitolo"><strong>pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</strong></p>
+
+                <div class="column">
+                    <div class="img-pos">
+                        <img class="img" src="./img/radar.jpeg"  alt="metalica">
+                        <h1 class="titolo">Release Radar</h1>
+                        
+                    </div>
+
+                    <div class="img-pos">
+                        <img class="img margin-img" src="./img/mixdaily.jpeg"  alt="metalica">
+                        <h1 class="titolo">Daily Mix 1</h1>
+                        
+                    </div>
+                </div>
+
+                <H1 class="h1">Artisti pi&ugrave; popolari</H1>
+                <p class="sottotitolo"><strong>pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</strong></p>
+
+                <div class="column">
+                    <div class="img-pos">
+                        <img class="img radius" src="./img/youg.jpeg"  alt="metalica">
+                        <h1 class="titolo">A cure for welness</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+
+                    <div class="img-pos">
+                        <img class="img margin-img radius" src="./img/einaudi.jpeg"  alt="metalica">
+                        <h1 class="titolo">Split</h1>
+                        <p class="subtitle">subtitle</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
-    <section class="display wrap">
+    <div class="web-app_bottom">
+
+        <div class="flex inline">
+            <img class="footer-img align" src="./img/sinister.jpeg" alt="sinister">
+        </div>
+        <div class="inline">
+            <p class="sinister inline">Sinister</p>
+            <p class="brano">Brano</p>
+            <p class="nome">Nome</p>
+        </div>
+
+        <div class="inline">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+
         
-    </section>
+        <div class="inline central-footer">
 
-    
+            <i class="fa-solid fa-share"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-rotate-right"></i>
 
+        </div>
 
+        <div class="progress-container">
+            <span class="color">0:25</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="pointer"></div>
+            </div>
+            <span class="color">4:35</span>
+        </div>
 
+        <div>
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
 
+        <div>
+            <i class="fa-solid fa-desktop"></i>
+        </div>
+
+    </div>
 </body>
 </html>

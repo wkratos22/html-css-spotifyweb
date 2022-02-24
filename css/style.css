@@ -2,119 +2,130 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-
-body{
-
-    background-color: rgb(34, 32, 32);
+.web-app{
+    
     height: 100vh;
-    width: 100vh;
 }
 
-.color{
+.web-app_top{
+    background-color: #262e35;
+    height: calc(100% -100px);
+    display: flex;
+    height: 100vh;
+}
 
+.aside{
     background-color: black;
-    width: 15%;
     height: 100%;
-
-}
-
-.flex-column{
-
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-}
-
-.spotify-color{
-
-    color: white;
-    
-}
-
-.icon-color{
-
-    color: rgb(0, 0, 0);
-
-}
-
-.icon-size{
-
-    height: 30px;
-    margin-top: 15px;
     
 }
 
 
-#download{
+.logo-spotify{
+    display: none;
+}
 
+.main{
+    background-color: rgb(48, 42, 42);
+    width: 95%;
+    overflow-y: auto;
+    
+}
+
+
+.overflow{
+    overflow-y: auto;
+}
+
+.cta{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
     height: 20px;
-    margin-left: 30%;
+    width: 90.5%;
+    text-align: right;
+    padding: 30px 20px 50px 0;
+}
 
+
+.cta-button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.cta:hover{
+    cursor: pointer;
+    
+}
+
+.web-app_bottom{
+    background-color: #282828;
+    height: 100px;
+    
+}
+
+.icon{
+    margin-top: 20px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+.testo-lista{
+    color: white;
+    text-decoration: none;
+    display: inline block;
+    display: none;
+    
+} 
+
+
+.logo-sp{
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 7px;
+}
+
+.aside-margin{
+    margin-top: 500px;
+}
+
+.center{
+    margin-left: 2px;
+    
 }
 
 #profile{
-
-    height: 35px;
-    width: 35px;
+    
     background-color: rgb(194, 194, 194);
     border-radius: 50%;
-    margin-left: 20%;
-    
-}
-
-/*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*//*DA CAMBIARE*/
-.margin{
-
-    margin-top: 600%;
-}
-
-.display{
-
-    display: flex;
-    
-}
-
-.upgrade{
-
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    margin-left: 45%;
-    margin-top: 8%;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 20px;
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    width: 49%;
-    
-
-}
-
-.header{
-
-    background-color: rgba(0, 0, 0, 0.507);
-    width: 100%;
-    height: 15%;
-    position: fixed;
-    
-}
-
-.wrap{
-    flex-wrap:wrap ;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
 }
 
 .list{
     margin-top: 120px;
     display: flex;
     list-style-type: none;
-    padding-left: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+ul li:hover{
+    color: rgb(228, 228, 228);
+    cursor: pointer;
 }
 
 ul li{
@@ -125,35 +136,367 @@ ul li{
     
 }
 
+.just-center{
+    justify-content: center;
+}
+
 .list2{
     margin-top: 30px;
     display: flex;
     list-style-type: none;
     padding-left: 5px;
-    margin-left: -320px;
+    justify-content: center;
 }
-
 
 .h1{
     color: white;
-    padding-top: 10%;
+    padding-top: 35px;
     padding-left: 15px;
     font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
-.column-img{
-    column-count: 2;
-    margin-left: 15px;
-    margin-top: 5%;
+.img{
+    height: 150px;
 }
 
-.img{
-    height: 145px;
+.img:hover{
+    cursor: pointer;
+}
+
+.img-pos{
+    margin-top: 15px;
+    margin-left: 7px;
+    width: 173px;
 }
 
 .titolo{
     color: white;
-    padding-left: 7%;
-    font-size: 17px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
 }
+
+
+.titolo:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display:flex ;
+}
+
+.column{
+    column-count: 2;
+}
+
+.margin-img{
+    margin-top: 16px;
+}
+
+.subtitle{
+    color: rgb(167, 167, 167);
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sottotitolo{
+    color: rgb(167, 167, 167);
+    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.radius{
+    border-radius: 50%;
+}
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+
+.footer-img{
+    height: 40px;
+}
+
+.align{
+    margin-top: 25px;
+    margin-left: 10px;
+    
+}
+
+.inline{
+    display: inline-block;
+    
+}
+
+.sinister{
+    position: absolute;
+    color: white;
+    margin-top: -45px;
+}
+
+.brano{
+    position: absolute;
+    color: rgb(150, 150, 150);
+    margin-top: -30px;
+}
+
+.nome{
+    position: absolute;
+    color: rgb(150, 150, 150);
+    margin-top: -15px;
+}
+
+.fa-heart{
+    color: white;
+    height: 50px;
+}
+
+.central-footer{
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    margin-left: 150px;
+    margin-top: -55px;
+    font-size: 17px;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.color{
+    color: white;
+    font-size: 12px;
+    margin-top: 19px;
+}
+
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #ccc4;
+    margin-top: 25px;
+}
+
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+}
+
+
+.progress:hover{
+    background-color: #2d5;
+    cursor: pointer;
+}
+
+.fa-share{
+    color: rgb(206, 206, 206);
+}
+
+.fa-share:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-backward-step{
+    color: rgb(206, 206, 206);
+}
+
+.fa-backward-step:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-play{
+    color: rgb(206, 206, 206);
+}
+
+.fa-play:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-forward-step{
+    color: rgb(206, 206, 206);
+}
+
+.fa-forward-step:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-rotate-right{
+    color: rgb(206, 206, 206);
+}
+
+.fa-rotate-right:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.fa-heart{
+    position: absolute;
+    margin-left: 55px;
+    margin-top: -31px;
+    height: 15px;
+    color:rgb(206, 206, 206) ;
+}
+
+
+.fa-heart:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.fa-volume-high{
+    position: absolute;
+    right: 5%;
+    margin-top: -39px;
+    color: rgb(206, 206, 206);
+}
+
+
+.fa-volume-high:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.fa-desktop{
+    position: absolute;
+    right: 13%;
+    margin-top: -39px;
+    color: rgb(206, 206, 206);
+}
+
+.fa-desktop:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 426px){
+    .main{
+        width: 95%;
+        overflow-y: auto;
+        background-color: rgb(48, 42, 42);
+        width: 90%;
+        
+    }
+
+    .img{
+        height: 140px;
+    }
+
+    .aside{
+        background-color: black;
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        
+    }
+
+    .logo-spotify{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: block;
+    }
+
+    .logo-sp{
+        display: none;
+    }
+
+    .cta{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 79%;
+        text-align: right;
+        padding: 30px 20px 50px 0;
+    }
+    
+    .testo-lista{
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 17px;
+        
+    } 
+
+    .column{
+        column-count: 2;
+    }
+    
+    .central-footer{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin-left: 280px;
+        margin-top: -55px;
+        font-size: 23px;
+        justify-content: space-between;
+        color: white;
+    
+    }
+    .playlist{
+        margin-top: 20px;
+        color: white;
+        font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    }
+
+    
+    .fa-square-plus{
+        color: rgb(99, 99, 99);
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    
+    .aside-div{
+        margin-left: 18px;
+    }
+    /*
+
+    .fa-heart{
+        position: absolute;
+        margin-left: 70px;
+        margin-top: -27px;
+    }
+
+    .progress-bar{
+        height: 4px;
+        border-radius: 10px;
+        width: 50%;
+        background-color: #ccc4;
+        margin-top: 25px;
+    }
+
+    .img-pos{
+        margin-top: 15px;
+        margin-left: 7px;
+        width: 50%;
+    }
+    
+}
+
